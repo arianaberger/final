@@ -7,6 +7,7 @@ Savvy Saver
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#app-demo">App Demo</a> •
+  <a href="#quick-start">Quick-Start Instructions</a> •
   <a href="#license">License</a>
 </p>
 
@@ -24,6 +25,28 @@ Savvy Saver
 
 You can watch an overview of this app that I recorded on [youtube](https://youtu.be/-vp_ztoGX0A).
 
+
+## Quick-Start Instructions
+
+```bash
+# Clone this repository
+$ git clone git@github.com:arianaberger/savvy-saver.git
+
+# Go into the repository
+$ cd savvy-saver
+
+# Install dependencies
+$ npm install
+
+# Run the app by opening two tabs
+# Tab 1
+$ rails s -p 3001
+
+# Tab 2
+$ cd client
+$ npm start
+```
+
 ## License
 
 MIT
@@ -32,4 +55,3 @@ MIT
 <img src = https://forthebadge.com/images/badges/made-with-ruby.svg>
 <img src = https://forthebadge.com/images/badges/made-with-javascript.svg>
 </p>
-
