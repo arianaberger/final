@@ -17,7 +17,7 @@ export default (state = {accounts: [], total: [], account: []}, action) => {
             ...state.accounts.map((account) => account.id === action.account.id ? {...account, name: action.account.name} : account)
           ]
         }
-        
+
       default: return state;
     }
   }
