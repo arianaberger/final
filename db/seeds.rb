@@ -1,3 +1,5 @@
+User.create(name: "Savvy Susy", email: "susy@savvy.com", password: "123")
+
 main_account = Account.find_or_create_by(name: "Main Account", main_account: true)
 fund_1 = Account.find_or_create_by(name: "Treat Yourself", main_account: false)
 fund_2 = Account.find_or_create_by(name: "Give to Others", main_account: false)
