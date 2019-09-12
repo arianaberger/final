@@ -22,6 +22,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rb-readline'
 gem 'rack-cors'
 gem 'foreman', '~> 0.82.0'
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

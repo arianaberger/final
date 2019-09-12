@@ -10,12 +10,21 @@ import DebitContainer from './DebitContainer';
 import AccountContainer from './AccountContainer';
 import About from '../components/About';
 import Footer from './Footer';
+import Login from './Login';
 import '../css/App.css';
 import '../css/Forms.css';
 import '../css/Accounts.css';
 import '../css/Footer.css';
 
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      currentUser: null
+    }
+  }
+
   render() {
     return (
       <div className="app-container">
