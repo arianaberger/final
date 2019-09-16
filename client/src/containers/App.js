@@ -29,6 +29,7 @@ class App extends Component {
     return (
       <div className="app-container">
         <div className="content-wrap">
+        <Login />
       <Router>
         <NavBar />
 	      <Route exact path="/"

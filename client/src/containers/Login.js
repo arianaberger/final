@@ -3,7 +3,8 @@ import { Form, Button } from 'react-bootstrap';
 
 const Login = () => {
   return (
-    <div>
+    <div className="LoginForm">
+    <h5>Login</h5>
     <Form >
           <Form.Group>
             <Form.Control
