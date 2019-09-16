@@ -21,15 +21,32 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      currentUser: null
+      currentUser: null,
+      loginForm: {
+        email: "",
+        password: ""
+      }
     }
+  }
+
+  handleLoginFormChange = e => {
+    const { name, value } = event.target
+    this.setState({
+      loginForm: {
+        ...this.state.loginForm,
+        [name]: value
+      }
+    })
   }
 
   render() {
     return (
       <div className="app-container">
         <div className="content-wrap">
-        <Login />
+        <Login
+          handleLoginFormChange={this.handleLoginFormChange}
+          handleLoginFormSubmit={this.handleLoginFormSubmit}
+        />
       <Router>
         <NavBar />
 	      <Route exact path="/"
