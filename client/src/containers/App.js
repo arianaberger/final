@@ -30,13 +30,21 @@ class App extends Component {
   }
 
   handleLoginFormChange = e => {
-    const { name, value } = event.target
+    const { name, value } = e.target
     this.setState({
       loginForm: {
         ...this.state.loginForm,
         [name]: value
       }
     })
+  }
+
+  handleLoginFormSubmit = e => {
+    e.preventDefault();
+    console.log("gotcha")
+    fetch()
+      .then()
+      .then()
   }
 
   render() {
