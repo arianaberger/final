@@ -55,7 +55,11 @@ class App extends Component {
 
     fetch('http://localhost:3001/login', headers)
       .then(r => r.json())
-      .then(console.log)
+      .then(user => {
+        this.setState({
+          currentUser: user
+        })
+      })
       .catch(console.log)
   }
 
