@@ -41,10 +41,22 @@ class App extends Component {
 
   handleLoginFormSubmit = e => {
     e.preventDefault();
-    console.log("gotcha")
-    fetch()
-      .then()
-      .then()
+
+    const userInfo = this.state.loginForm
+    const headers = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        user: userInfo
+      })
+    }
+
+    fetch('http://localhost:3000/login', headers)
+      .then(r => r.json())
+      .then(console.log)
+      .catch(console.log)
   }
 
   render() {
