@@ -7,9 +7,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:user][:password])
       render json: @user
     else
-      render json: {
-        error: "Invalid credentials"
-      }, status: :unauthorized
+      render json: {error: "Invalid credentials"}
     end
   end
 

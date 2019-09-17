@@ -56,9 +56,13 @@ class App extends Component {
     fetch('http://localhost:3001/login', headers)
       .then(r => r.json())
       .then(user => {
-        this.setState({
-          currentUser: user
-        })
+        if (user.error) {
+          alert("Invalid Credentials")
+        } else {
+          this.setState({
+            currentUser: user
+          })
+        }
       })
       .catch(console.log)
   }
