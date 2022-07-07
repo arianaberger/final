@@ -6,7 +6,7 @@
   "dependencies": {
     "accounting-js": "^1.1.1",
     "bootstrap": "^4.3.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-datepicker": "^2.8.0",
